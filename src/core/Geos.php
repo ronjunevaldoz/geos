@@ -53,7 +53,7 @@ class Geos {
     public function region()
     {
     	$filtered = [];
-    	foreach ($this->test() as $key => $value) {
+    	foreach ($this->read() as $key => $value) {
     		// var_dump($value);
     		if(isset($value[6]) && $value[6] == 'A' && isset($value[7]) && $value[7] == "ADM1") {
     			$filtered[] = $value;

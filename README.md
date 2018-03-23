@@ -7,6 +7,8 @@ The GeoNames geographical database covers all countries and contains over eleven
 # Installation
 `composer require ronscript/geos`
 
+`php artisan vendor:publish --tag=geos`
+
 # How to use
 `Geos::all()`
 
