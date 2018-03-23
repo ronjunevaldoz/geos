@@ -1,0 +1,41 @@
+{
+    "name": "ronscript/geos",
+    "description": "Geo location for all countries",
+    "authors": [
+        {
+            "name": "Ron June Lopez",
+            "email": "ronjune.lopez@gmail.com"
+        }
+    ],
+    "license": "MIT",
+    "type": "library",
+    "minimum-stability": "dev",
+    "support": {
+        "email": "ronjune.lopez@gmail.com"
+    },
+    "require": {
+        "php": ">=5.6"
+    },
+    "require-dev": {
+    },
+    "autoload": {
+        "psr-4": {
+            "Ronscript\\Geos\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Ronscript\\Geos\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ronscript\\Geos\\GeosServiceProvider"
+            ],
+            "aliases": {
+                "Geos": "Ronscript\\Geos\\Facades\\Geos"
+            }
+        }
+    }
+}
