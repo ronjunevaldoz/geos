@@ -23,6 +23,6 @@ class GeosServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->bind('geos', 'Core\Geos' );
+        $this->app->bind('geos', Core\Geos::class);
     }
 }

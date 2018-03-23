@@ -1,6 +1,6 @@
 <?php 
 
-namespace Ronscript\Geos;
+namespace Ronscript\Geos\Core;
 
 use Illuminate\Support\Collection;
 
