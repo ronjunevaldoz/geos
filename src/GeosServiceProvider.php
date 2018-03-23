@@ -13,7 +13,10 @@ class GeosServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        $this->publishes([
+            __DIR__.'/data/PH.txt' => storage_path('app/public/geos'),
+            __DIR__.'/data/readme.txt' => storage_path('app/public/geos')
+        ], 'geos');
     }
 
     /**
